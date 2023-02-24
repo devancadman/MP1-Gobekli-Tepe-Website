@@ -19,3 +19,17 @@ document.addEventListener('keyup', (e) => {
     document.body.style.overflow = ''; // Restore page scroll
   }
 });
+
+
+/***** Show the Sticky-nav after a user has scrolled 450px *****/ 
+window.addEventListener('scroll', function() {
+    var height = window.pageYOffset;
+    var stickyNav = document.querySelector('.sticky-nav');
+    
+    if (height >= 450) { /* Specify Scroll Amount before nav shows */
+      stickyNav.classList.add('show');
+    } else {
+      stickyNav.classList.remove('show');
+    }
+  });
+  
