@@ -29,7 +29,10 @@
     isolation: isolate;
   }
 
-  @font-face {
+/* @IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"');
+       
+@font-face {
     font-family: 'dalekregular';
     src: url('/assets/css/fonts/dalek.eot'); /* IE9 Compat Modes */
     src: url('/assets/css/fonts/dalek.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -45,16 +48,18 @@
     --brown:#67442F;
     --navy:#161C21;
     --tan: #d6b68e;
+    --inknut: 'Inknut Antiqua', Arial;
+    --dalek: 'dalekregular', serif;
 }
     
 ::selection {background:#161C21;color:#fff;}
 
 body {
-    font-family: 'Inknut Antiqua', serif;
+    font-family: var(--inknut);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'dalekregular', sans-serif;
+    font-family: var(--dalek);
 }
 .grid {
     display: grid;
@@ -123,8 +128,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-.nav-btn img.pillar, .nav-btn.is-active img.xmark {display:block;z-index:99999;position:relative;}
-.nav-btn.is-active img.pillar, .nav-btn img.xmark {display:none;}
+.nav-btn img.pillar, .nav-btn.is-active img.xmark {
+    display:block;
+    z-index:99999;
+    position:relative;
+}
+.nav-btn.is-active img.pillar, .nav-btn img.xmark {
+    display:none;
+}
 
 
 .nav-menu {position:fixed;left:0;top:0;height:100%;background:var(--red);color:#fff;width:100vw;transform:translatex(-200vw);transition:all .5s;z-index:99998;}
