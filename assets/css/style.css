@@ -61,6 +61,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--dalek);
 }
+
 .grid {
     display: grid;
     grid-gap: 4rem;
@@ -109,8 +110,27 @@ h1, h2, h3, h4, h5, h6 {
     place-content: center;
 }
 
+.nav-menu {
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.nav--active .nav-menu {
+    background: var(--navy);
+    color: #fff;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+    transform: translateX(0);
+}
+
 .nav-btn {
-    background-color: #161C21;
+    background: var(--navy) url('../images/pillar-button.svg') no-repeat center / 50%;
     border-radius: 100px;
     width: 70px;
     height: 70px;
@@ -122,21 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: .3s;
     cursor: pointer;
 }
-.nav-btn img {
-    height: 55px;
-    width: auto;
-    margin: 0 auto;
+.nav--active .nav-btn {
+    background: var(--navy) url('../images/xmark.svg') no-repeat center / 50% !important;
+    z-index: 101;
 }
-
-.nav-btn img.pillar, .nav-btn.is-active img.xmark {
-    display:block;
-    z-index:99999;
-    position:relative;
-}
-.nav-btn.is-active img.pillar, .nav-btn img.xmark {
-    display:none;
-}
-
-
-.nav-menu {position:fixed;left:0;top:0;height:100%;background:var(--red);color:#fff;width:100vw;transform:translatex(-200vw);transition:all .5s;z-index:99998;}
-.nav-menu.active {transform:translateX(0);-webkit-animation:fade_in .25s linear both;-moz-animation:fade_in .25s linear both;animation:fade-in .25s linear both;}

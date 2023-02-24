@@ -1,34 +1,21 @@
-/***** Menu open on Click *****/
-document.addEventListener("DOMContentLoaded", function() {
-    var navBtn = document.querySelector(".nav-btn");
-    var navMenu = document.querySelector(".nav-menu");
-    navBtn.addEventListener("click", function(e) {
-      e.stopPropagation();
-      navBtn.classList.toggle("is-active");
-      navMenu.classList.toggle("active");
-    });
-  
-    // Close Menu if esc key pressed
-    document.addEventListener("keyup", function(e) {
-      if (e.key === "Escape") {
-        navBtn.classList.remove("is-active");
-        navMenu.classList.remove("active");
-      }
-    });
-  });
-  
-  /***** Menu onClick hide Body Scroll *****/
-  document.addEventListener("DOMContentLoaded", function() {
-    var navBtn = document.querySelector(".nav-btn");
-    navBtn.addEventListener("click", function() {
-      document.body.classList.toggle("no-scroll");
-    });
-  
-    // Restore Scroll if esc key pressed
-    document.addEventListener("keyup", function(e) {
-      if (e.key === "Escape") {
-        document.body.classList.remove("no-scroll");
-      }
-    });
-  });
-  
+/***** Toggle Nav-btn on Click and remove page scroll *****/
+const navBtn = document.querySelector('.nav-btn');
+const navParent = navBtn.parentElement;
+
+navBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  navParent.classList.toggle('nav--active');
+
+  if (navParent.classList.contains('nav--active')) {
+    document.body.style.overflow = 'hidden'; // Remove page scroll
+  } else {
+    document.body.style.overflow = ''; // Restore page scroll
+  }
+});
+
+document.addEventListener('keyup', (e) => {
+  if (e.key === 'Escape') {
+    navParent.classList.remove('nav--active');
+    document.body.style.overflow = ''; // Restore page scroll
+  }
+});
