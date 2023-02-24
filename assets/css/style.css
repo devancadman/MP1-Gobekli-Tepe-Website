@@ -48,3 +48,9 @@
     }
     
 ::selection {background:#161C21;color:#fff;}
+
+body {
+    font-family: 'Inknut Antiqua', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {font-family:'dalekregular', sans-serif;}
