@@ -29,4 +29,14 @@
     isolation: isolate;
   }
 
-  
+  @font-face {
+    font-family: 'dalekregular';
+    src: url('/assets/css/fonts/dalek.eot'); /* IE9 Compat Modes */
+    src: url('/assets/css/fonts/dalek.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/css/fonts/dalek.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/assets/css/fonts/dalek.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/assets/css/fonts/dalek.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/assets/css/fonts/dalek.svg#dalek') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
