@@ -45,7 +45,7 @@
     --brown:#67442F;
     --navy:#161C21;
     --tan: #d6b68e;
-    }
+}
     
 ::selection {background:#161C21;color:#fff;}
 
@@ -53,4 +53,43 @@ body {
     font-family: 'Inknut Antiqua', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {font-family:'dalekregular', sans-serif;}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'dalekregular', sans-serif;
+}
+.grid {
+    display: grid;
+    grid-gap: 4rem;
+    box-sizing: border-box;
+    align-content: stretch;
+    justify-content: center;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.site-header {
+    background-color: var(--navy);
+}
+.site-header .grid {
+    grid-template-columns: 1fr 1fr;
+}
+#site-logo img {
+    max-height: 50px;
+}
+.nav-menu {
+    display: inline-grid;
+    align-items: center;
+}
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
