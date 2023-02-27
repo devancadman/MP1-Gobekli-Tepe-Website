@@ -52,6 +52,7 @@
 }  
 ::selection {background:#161C21;color:#fff;}
 
+/* BASIC STYLING */
 body {
     font-family: var(--inknut);
 }
@@ -62,6 +63,11 @@ p {
     margin: 0;
     padding: 10px 0;
 }
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
 .grid {
     display: grid;
     grid-gap: 4rem;
@@ -69,17 +75,18 @@ p {
     align-content: stretch;
     justify-content: center;
 }
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
+
+
+/* SITE HEADER */
 .site-header {
     background-color: var(--navy);
 }
 .site-header .grid {
     grid-template-columns: 1fr 2fr;
 }
+
+/* STICKY NAV */
 .sticky-nav {
     position: fixed;
     background-color: rgb(22, 28, 33, 0.9);
@@ -146,6 +153,8 @@ p {
     height: 24px;
     background-image: url('../images/wolf.png');
 }
+
+/* HERO SECTION */
 .hero-section {position:relative;}
 .nav-menu {
     display:grid;
@@ -177,7 +186,7 @@ p {
     position:relative;
 }
 .nav-btn {
-    background: var(--navy) url('../images/pillar-button.svg') no-repeat center / 50%;
+    background: var(--navy) url('../icons/pillar-button.svg') no-repeat center / 50%;
     border-radius: 100px;
     width: 60px;
     height: 60px;
@@ -190,7 +199,7 @@ p {
     cursor: pointer;
 }
 .nav--active .nav-btn {
-    background: var(--navy) url('../images/xmark.svg') no-repeat center / 50% !important;
+    background: var(--navy) url('../icons/xmark.svg') no-repeat center / 50% !important;
     z-index: 101;
 }
 .hero {
@@ -202,3 +211,4 @@ p {
     display: grid;
     place-content: center;
 }
+
