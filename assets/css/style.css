@@ -334,6 +334,34 @@ img {
 .footer-main .company-info .address:before {
     background-image: url('../images/icons/location.svg');
 }
+.footer-main .company-info .email:hover::before {
+    background-image: url('../images/icons/email-tan.svg');
+}
+.footer-main .company-info .phone-number:hover::before {
+    background-image: url('../images/icons/phone-tan.svg');
+}
+.footer-main .company-info .address:hover::before {
+    background-image: url('../images/icons/location-tan.svg');
+}
+.footer-main .social-facebook:hover img {
+    content: url('../images/icons/facebook-tan.svg');
+}
+.footer-main .social-instagram:hover img {
+    content: url('../images/icons/instagram-tan.svg');
+}
+.footer-main .social-twitter:hover img {
+    content: url('../images/icons/twitter-tan.svg');
+}
+.footer-main .social-youtube:hover img {
+    content: url('../images/icons/youtube-tan.svg');
+}
+.footer-main .social-pinterest:hover img {
+    content: url('../images/icons/pinterest-tan.svg');
+}
+.footer-main .social-tripadvisor:hover img {
+    content: url('../images/icons/tripadvisor-tan.svg');
+}
+
 
 /* SUB-FOOTER */
 .footer-sub {
