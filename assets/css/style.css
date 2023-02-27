@@ -244,53 +244,67 @@ img {
 }
 
 /* SITE FOOTER */
-.site-footer {
-    background-color: var(--navy);
-}
 .site-footer a {
     color: #fff;
+    text-decoration: none;
 }
 .site-footer a:hover {
     color: var(--tan);
 }
+.site-footer .footer-main {
+    background-color: var(--navy);
+    padding: 5rem 0;
+}
 .footer-main .grid {
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
 }
-.site-footer .grid .col {
+.footer-main .grid .col {
     display:inline-grid;
     padding: 0 15px;
     overflow: visible;
 }
-.site-footer .logo {
+.footer-main .grid .col.footer-button {
+    display:block;
+    margin: 0 auto;
+}
+.footer-main .logo {
     margin-bottom: 2rem;
     display: inline-block;
 }
-.social-icons a {
-    width: 40px;
-    height: 40px;
+.footer-main .social-icons a {
+    width: 30px;
+    height: 30px;
     display: inline-block;
     position: relative;
+    margin: 0 2.5px;
 }
-.social-icons a img {
+.footer-main .social-icons a img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 25px;
+    width: auto;
+    max-width: 40px;
 }
-.site-footer ul {
+.footer-main .footer-nav-menu {
+    place-content: center;
+}
+.footer-main ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.site-footer ul li {
+.footer-main ul li {
     margin: 0;
     padding: 0 0 13px;
 }
-.site-footer ul li a {
+.footer-main ul li a {
     display: block;
     text-transform: uppercase;
 }
-.company-info .email, .company-info .phone-number, .company-info .address {
+.footer-main .company-info .email, .footer-main .company-info .phone-number, .footer-main .company-info .address {
     padding-left: 3rem !important;
     position: relative;
     display: flex;
@@ -300,30 +314,32 @@ img {
 .footer-main .address, .footer-main .email, .footer-main .phone-number {
     margin-bottom: 2rem;
 }
-.site-footer .company-info .email:before, .site-footer .company-info .phone-number:before, .site-footer .company-info .address:before {
+.footer-main .company-info .email:before, .footer-main .company-info .phone-number:before, .footer-main .company-info .address:before {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
-    background-size: contain;
+    background-size: 25px;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 26px;
+    height: 35px;
 }
-.site-footer .company-info .email:before {
+.footer-main .company-info .email:before {
     background-image: url('../images/icons/email.svg');
 }
-.site-footer .company-info .phone-number:before {
+.footer-main .company-info .phone-number:before {
     background-image: url('../images/icons/phone.svg');
 }
-.site-footer .company-info .address:before {
+.footer-main .company-info .address:before {
     background-image: url('../images/icons/location.svg');
 }
 
 /* SUB-FOOTER */
-.footer-sub-wrapper {
-    padding: 1rem 0;
+.footer-sub {
     background-color:var(--tan);
-    color: #fff;
+    color: var(--navy);
     font-size: 80%;
+    text-align:center;
+    font-weight: 500;
 }
