@@ -63,6 +63,13 @@ p {
     margin: 0;
     padding: 10px 0;
 }
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
 .container {
     max-width: 1300px;
     margin: 0 auto;
