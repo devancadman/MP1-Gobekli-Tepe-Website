@@ -83,7 +83,31 @@ img {
     justify-content: center;
 }
 
-
+/* BUTTON */ 
+.button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2em;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 56px;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    overflow: hidden;
+    font-weight: 700;
+    font-family: var(--dalek);
+    background: linear-gradient(#fff 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+    transition: 500ms,background-position 0s;
+}
+.button:hover {
+    --p: 100%;
+    color: var(--navy) !important;
+}
 
 /* SITE HEADER */
 .site-header {
