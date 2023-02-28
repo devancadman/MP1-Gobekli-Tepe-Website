@@ -52,9 +52,6 @@
 ::selection {background:#161C21;color:#fff;}
 
 /********** BASIC STYLING **********/
-html {
-    scroll-behavior: smooth;
-}
 body {
     font-family: var(--inknut);
     font-size:16px;
@@ -265,6 +262,9 @@ hr {
     height: 24px;
     background-image: url('../images/wolf.png');
 }
+.sticky-nav-menu li:hover a:before, .sticky-nav-menu li.active a:before {
+    bottom:40px !important;
+}
 
 /********** Figure with figcaption on Hover **********/
 figure {
@@ -447,64 +447,7 @@ figcaption a {
 .discovery h2, .significance h2, .purpose h2 {
     padding-bottom:3rem;
 }
-.view-more {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    animation: bounce 1s infinite alternate;
-  }
-  
-  @keyframes bounce {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(5px); }
-  }
-  
-  .view-more p {
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: -1.5px -1.5px 0 #161c21, 1.5px -1.5px 0 #161c21, -1.5px 1.5px 0 #161c21, 1.5px 1.5px 0 #161c21;
-  }
-  
-  .view-more a {
-    position: relative;
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 2px solid #161C21;
-    border-top: none;
-    border-left: none;
-    transform: rotate(45deg);
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-  }
-  
-  .view-more a:hover {
-    box-shadow: 0 0 0 4px #161C21, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .view-more img {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    max-width: 30px;
-    max-height: 35px;
-    transform: rotate(-45deg);
-  }
-  
-  .view-more a:before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    height: 54px;
-    width: 54px;
-    border-top: none;
-    border-left: none;
-    transform: rotate(-45deg);
-  }
-  
+
 /********** ABOUT **********/
 .pillars figure {
     display:block;
@@ -619,6 +562,92 @@ ul {
     100% {
         transform: translateY(0);
     }
+}
+
+/******* View More Button ******/
+.view-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(5px); }
+  }
+  
+  .view-more p {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: -1.5px -1.5px 0 #161c21, 1.5px -1.5px 0 #161c21, -1.5px 1.5px 0 #161c21, 1.5px 1.5px 0 #161c21;
+  }
+  
+  .view-more a {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #161C21;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  
+  .view-more a:hover {
+    box-shadow: 0 0 0 4px #161C21, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .view-more img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    max-width: 30px;
+    max-height: 35px;
+    transform: rotate(-45deg);
+  }
+  
+  .view-more a:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 54px;
+    width: 54px;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+  }
+
+/********** BACK TO TOP **********/
+.back-to-top.show {
+    opacity: 1;
+    transform: translatey(0px);
+    pointer-events: all;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--navy);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translatey(-30px);
+    transition: all 1s;
+    background: #fff url('../images/icons/chevron-up.svg') no-repeat center / 50% !important;
+    box-shadow: 0 0 0 4px var(--navy), inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+    z-index: 99;
 }
 
 /********** CONTACT **********/
