@@ -202,7 +202,7 @@ hr {
     left: 0;
     width: 100%;
     height: auto;
-    z-index: 100;
+    z-index: 9999;
     opacity: 1;
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -908,7 +908,6 @@ button.submit:hover {
 
 /********** SUB-FOOTER **********/
 .footer-sub {
-    background-color:var(--tan);
     color: var(--navy);
     font-size: 80%;
     text-align:center;
@@ -933,7 +932,7 @@ button.submit:hover {
     width: 1px !important;
     overflow: hidden;
   }
-  
+
 /********************* MEDIA QUERIES *********************/ 
 /* Max-Widths */
 @media (max-width:550px){
