@@ -918,7 +918,8 @@ button.submit:hover {
     max-height: 25px;
     display: inline-block;
 }
-.footer-sub a:hover {
+
+.footer-sub a, .footer-sub a:hover {
     color: var(--navy);
 }
 
