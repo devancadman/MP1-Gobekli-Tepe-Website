@@ -82,7 +82,10 @@ p {
     margin: 0;
     padding: 10px 0;
 }
-a {text-decoration:none;}
+a {
+    text-decoration:none;
+    color: var(--navy)
+}
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -105,7 +108,15 @@ img {
 .alignCenter {
     text-align: center;
 }
-
+.padding-both {
+    padding: 3rem 0;
+}
+.padding-bottom {
+    padding-bottom:3rem ;
+}
+.margin-both {
+    margin: 3rem 0;
+}
 /* BUTTON */ 
 .button {
     position: relative;
@@ -156,7 +167,7 @@ img {
     -webkit-transition: -webkit-transform .6s ease;
     -moz-transition: -moz-transform .6s ease;
     transition: transform .6s ease;
-    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 8%);
+    box-shadow: 0 2px 8px 0 rgb(0, 0, 0 / 8%);
 }
 .sticky-nav.show {
     opacity: 1;
@@ -276,6 +287,15 @@ img {
 }
 
 main {margin: 5rem auto;}
+
+/* Home - Intro section */
+.intro p {
+    padding: 0 2rem 2rem;
+}
+.intro img {
+    max-height: 70vh;
+    width: 100%;
+}
 
 /***** Timeline inspiration from - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
 .timeline-title {
@@ -504,6 +524,7 @@ main {margin: 5rem auto;}
     text-align:center;
     font-weight: 500;
 }
+
 
 /*Timeline Media Queries */
 @media (max-width: 550px){
