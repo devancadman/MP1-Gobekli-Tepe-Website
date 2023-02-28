@@ -73,6 +73,10 @@ h2 {
 h3 {
     font-size: 30px;
 }
+/* Sourced the below list-style-image from: https://medium.com/iconfinder/how-to-add-custom-icons-to-list-items-using-css-and-base64-af43c1b425ef */
+ul {
+    list-style-image:url('../images/icons/pillar.svg');
+}
 p, li {
     margin: 0;
     padding: 10px 0;
@@ -462,9 +466,14 @@ figcaption a {
 #Brochures .flex {
     gap:4rem;
 }
-/* Sourced the below list-style-image from: https://medium.com/iconfinder/how-to-add-custom-icons-to-list-items-using-css-and-base64-af43c1b425ef */
-ul {
-    list-style-image:url('../images/icons/pillar.svg');
+#Brochures a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--navy);
+}
+.further-info a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    color: var(--tan);
 }
 
 /********** TIMELINE **********/
