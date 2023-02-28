@@ -61,22 +61,18 @@ body {
     margin:0;
     padding:0;
 }
-#page {
-    overflow:hidden;
-    clear:both;
-}
 h1, h2, h3 {
     font-family: var(--dalek);
     line-height: normal;
 }
 h1 {
-    font-size: 35px
+    font-size: 65px;
 }
 h2 {
-    font-size: 30px
+    font-size: 50px;
 }
 h3 {
-    font-size: 25px
+    font-size: 30px;
 }
 p {
     margin: 0;
@@ -96,6 +92,7 @@ img {
     height: auto;
     object-fit: cover;
     object-position: center;
+    margin:0 auto;
 }
 .container {
     max-width: 1300px;
@@ -107,20 +104,12 @@ img {
     grid-gap: 4rem;
     box-sizing: border-box;
     align-content: stretch;
+    align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
 .alignCenter {
     text-align: center;
-}
-.padding-both {
-    padding: 3rem 0;
-}
-.padding-bottom {
-    padding-bottom:3rem ;
-}
-.margin-both {
-    margin: 3rem 0;
 }
 .tan-background {
     background-color: var(--tan);
@@ -129,6 +118,13 @@ img {
 .navy-background {
     background-color: var(--navy);
     color: #fff;
+}
+#page {
+    overflow:hidden;
+    clear:both;
+}
+.padding-bottom {
+    padding-bottom:3rem ;
 }
 
 /********** BUTTON **********/ 
@@ -324,8 +320,6 @@ figcaption a {
     place-content: center;
 }
 
-main {margin: 5rem auto;}
-
 /********** Home - Intro section **********/
 .intro img {
     max-height: 70vh;
@@ -377,6 +371,9 @@ main {margin: 5rem auto;}
     place-content: center;
     color: #fff;
 }
+.box-title h2 {
+    padding-bottom:0;
+}
 .box:hover::before {
     opacity: 0;
     z-index: 1;
@@ -402,10 +399,18 @@ main {margin: 5rem auto;}
 }
 
 /********** Home - Discovery **********/
-.discovery h2 {
-    padding-bottom:3rem;
+.discovery img {
+    width:100%;
 }
 
+/********** Home - Architecture **********/
+.architecture img {
+    max-height:450px;
+}
+
+.discovery h2, .significance h2, .purpose h2 {
+    padding-bottom:3rem;
+}
 
 /********** TIMELINE **********/
 /***** Timeline inspiration from - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
@@ -662,6 +667,12 @@ main {margin: 5rem auto;}
     main {
         margin: 2rem auto;
     }
+    .padding-both {
+        padding: 3rem 0;
+    }
+    .margin-both {
+        margin: 3rem 0;
+    }
     p {
         padding-bottom: 3rem;
     }
@@ -670,6 +681,10 @@ main {margin: 5rem auto;}
     }
     .grid {
         grid-template-columns: auto !important;
+    }
+    .discovery h2, .significance h2, .architecture h2, .purpose h2 {
+        text-align:center;
+        padding-bottom:2rem;
     }
     #timeline::before {
         left: 5%;
@@ -689,6 +704,12 @@ main {margin: 5rem auto;}
 }
 
 @media(max-width:1024px){
+    h2 {
+        font-size:35px;
+    }
+    .sticky-nav-menu ul {
+        gap: 1rem;
+    }
     .footer-main .grid {grid-template-columns: 1fr 1fr;}
     .footer-main .grid .col {    
         align-content: center;
@@ -697,6 +718,13 @@ main {margin: 5rem auto;}
 }
 /* Min-Width */
 @media (min-width: 768px){
+    main {margin: 5rem auto;}
+    .padding-both {
+        padding: 5rem 0;
+    }
+    .margin-both {
+        margin: 5rem 0;
+    }
     .intro p {
         padding: 0 2rem 2rem;
     }
