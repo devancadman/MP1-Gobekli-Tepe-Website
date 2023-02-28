@@ -55,14 +55,34 @@
 /* BASIC STYLING */
 body {
     font-family: var(--inknut);
+    scroll-behavior: smooth;
+    font-size:16px;
+    font-weight:400;
+    color:var(--navy);
+    margin:0;
+    padding:0;
 }
-h1, h2, h3, h4, h5, h6 {
+#page {
+    overflow:hidden;
+    clear:both;
+}
+h1, h2, h3 {
     font-family: var(--dalek);
+}
+h1 {
+    font-size: 35px
+}
+h2 {
+    font-size: 30px
+}
+h3 {
+    font-size: 25px
 }
 p {
     margin: 0;
     padding: 10px 0;
 }
+a {text-decoration:none;}
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -81,6 +101,9 @@ img {
     box-sizing: border-box;
     align-content: stretch;
     justify-content: center;
+}
+.alignCenter {
+    text-align: center;
 }
 
 /* BUTTON */ 
@@ -168,15 +191,16 @@ img {
     text-decoration: none;
     font-size: 20px;
     font-family: var(--dalek);
+    font-weight:bold;
 }
-.sticky-nav-menu li:hover a, .nav-menu li:hover a {
+.sticky-nav-menu li:hover a, .nav-menu li:hover a, .sticky-nav-menu li.active a, .nav-menu li.active a {
     color: var(--tan);
 }
-.sticky-nav-menu li:hover a:before, .nav-menu li:hover a:before {
+.sticky-nav-menu li:hover a:before, .nav-menu li:hover a:before, .sticky-nav-menu li.active a:before, .nav-menu li.active a:before {
     content: '';
     position: absolute;
     left: 35%;
-    bottom: 15px;
+    bottom: 18px;
     background-size: 22px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -186,7 +210,15 @@ img {
 }
 
 /* HERO SECTION */
-.hero-section {position:relative;}
+.hero-section {
+    position:relative;
+}
+.hero-section h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: -1.5px -1.5px 0 #161c21, 1.5px -1.5px 0 #161c21, -1.5px 1.5px 0 #161c21, 1.5px 1.5px 0 #161c21;
+}
 .nav-menu {
     display:grid;
     transform: translateX(-100%);
@@ -223,8 +255,8 @@ img {
     height: 60px;
     border: 1px solid #fff;
     position: absolute;
-    right: 50px;
-    top: 15px;
+    right: 5%;
+    top: 5%;
     transform-origin: center;
     transition: .3s;
     cursor: pointer;
@@ -242,6 +274,8 @@ img {
     display: grid;
     place-content: center;
 }
+
+main {margin: 5rem auto;}
 
 /* SITE FOOTER */
 .site-footer a {
@@ -263,14 +297,21 @@ img {
     display:inline-grid;
     padding: 0 15px;
     overflow: visible;
+    grid-gap: 2rem;
 }
 .footer-main .grid .col.footer-button {
-    display:block;
+    /*display:block;*/
     margin: 0 auto;
 }
 .footer-main .logo {
     margin-bottom: 2rem;
     display: inline-block;
+}
+.footer-main .social-icons {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    align-items: start
 }
 .footer-main .social-icons a {
     width: 30px;
@@ -307,12 +348,6 @@ img {
 .footer-main .company-info .email, .footer-main .company-info .phone-number, .footer-main .company-info .address {
     padding-left: 3rem !important;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.footer-main .address, .footer-main .email, .footer-main .phone-number {
-    margin-bottom: 2rem;
 }
 .footer-main .company-info .email:before, .footer-main .company-info .phone-number:before, .footer-main .company-info .address:before {
     content: "";
@@ -361,7 +396,6 @@ img {
 .footer-main .social-tripadvisor:hover img {
     content: url('../images/icons/tripadvisor-tan.svg');
 }
-
 
 /* SUB-FOOTER */
 .footer-sub {
