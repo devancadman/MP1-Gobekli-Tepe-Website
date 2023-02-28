@@ -91,7 +91,7 @@ window.addEventListener('load', function() {
       }
   });
 
-  /*Scroll to anchor when clicking a button with an anchor - helpfull ref: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link*/
+  /*Scroll to anchor when clicking a button with an anchor - helpfull ref: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link & https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2*/
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   for (let i = 0; i < anchorLinks.length; i++) {
       anchorLinks[i].addEventListener('click', function(event) {
