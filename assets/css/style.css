@@ -74,7 +74,7 @@ h2 {
 h3 {
     font-size: 30px;
 }
-p {
+p, li {
     margin: 0;
     padding: 10px 0;
     line-height: normal;
@@ -112,6 +112,13 @@ img {
     justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
+.flex {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
 .alignCenter {
     text-align: center;
 }
@@ -122,6 +129,9 @@ img {
 .navy-background {
     background-color: var(--navy);
     color: #fff;
+}
+.navy-background a {
+    color:#fff;
 }
 #page {
     overflow:hidden;
@@ -439,6 +449,16 @@ figcaption a {
 /********** ABOUT **********/
 .pillars figure {
     display:block;
+}
+#Brochures h3 {
+    margin-bottom:2rem;
+}
+#Brochures .flex {
+    gap:4rem;
+}
+/* Sourced the below list-style-image from: https://medium.com/iconfinder/how-to-add-custom-icons-to-list-items-using-css-and-base64-af43c1b425ef */
+ul {
+    list-style-image:url('../images/icons/pillar.svg');
 }
 
 /********** TIMELINE **********/
