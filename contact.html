@@ -59,8 +59,56 @@
     </header>
         
     <main role="main">
-        <section class="container">
-            
+        <section class="intro">
+            <div class="container">
+                <p>If you're interested in learning more about the history of Göbekli Tepe, or if you're planning a visit to the site, we'd love to hear from you! Please feel free to get in touch with us, using the form below, and we'll be happy to provide you with all the information you need.</p>
+                <br>
+                <p>We also have some Tour Brochures available here: <a href="./about.html/#Brochures">View Now</a></p>
+                <hr>
+            </div>
+        </section>
+        <section class="location">
+            <div class="container grid">
+                <div class="address">
+                    <p>Göbeklitepe,
+                    <br>Örencik,
+                    <br>63290
+                    <br>Haliliye/Şanlıurfa,
+                    </br>Türkiye</p>
+                    <br>
+                    <h3>Co-Ordinates</h3>
+                    <a href="https://geohack.toolforge.org/geohack.php?pagename=G%C3%B6bekli_Tepe&params=37_13_23_N_38_55_21_E_type:landmark">37°13′23″N 38°55′21″E</a>
+                </div>
+                <figure>
+                    <img src="assets/images/Göbekli-Tepe-Location.png" alt="Göbekli Tepe location on a Map">
+                    <figcaption>Göbekli Tepe Location Map - <a href="https://commons.wikimedia.org/wiki/File:Smithsonian_map_g%C3%B6bekli_tepe.jpg">US gov</a>, Public domain, via Wikimedia Commons</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="contact-form">
+            <div class="container grid">
+                <figure>
+                    <img src="assets/images/Şanlıurfa_Müzesi_Göbeklitepe_Building_D_replica_Tapınağı.jpg" alt="Göbekli Tepe Building D replica inside Şanlıurfa">
+                    <figcaption>Building D replica - <a href="https://commons.wikimedia.org/wiki/File:%C5%9Eanl%C4%B1urfa_M%C3%BCzesi_G%C3%B6beklitepe_D_Tap%C4%B1na%C4%9F%C4%B1.jpg">Cobija</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</figcaption>
+                </figure>
+                <div class="form">
+                    <form method="POST" action="https://formdump.codeinstitute.net/" id="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+                        <button class="button submit" type="submit">Submit</button>
+                      </form>                      
+                </div>
+            </div>
         </section>
     </main>
     <footer class="site-footer">
