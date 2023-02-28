@@ -284,6 +284,7 @@ figcaption {
     color: white !important;
     padding: 10px;
     display: none;
+    font-size: 12px;
 }
 figcaption a {
     color: var(--tan);
@@ -840,6 +841,13 @@ button.submit:hover {
     text-align:center;
     font-weight: 500;
 }
+.footer-sub img {
+    max-height: 25px;
+    display: inline-block;
+}
+.footer-sub a:hover {
+    color: var(--navy);
+}
 
 /********************* MEDIA QUERIES *********************/ 
 /* Max-Widths */
@@ -856,6 +864,9 @@ button.submit:hover {
 
     .timeline-block {
         width: 90% !important;
+    }
+    figcaption {
+        font-size: 10px;
     }
 }
 
