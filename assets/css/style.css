@@ -44,7 +44,6 @@
 }
 
 :root {
-    --brown:#67442F;
     --navy:#161C21;
     --tan: #d6b68e;
     --inknut: 'Inknut Antiqua', Arial;
@@ -52,7 +51,7 @@
 }  
 ::selection {background:#161C21;color:#fff;}
 
-/* BASIC STYLING */
+/********** BASIC STYLING **********/
 body {
     font-family: var(--inknut);
     scroll-behavior: smooth;
@@ -104,6 +103,7 @@ img {
     box-sizing: border-box;
     align-content: stretch;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
 .alignCenter {
     text-align: center;
@@ -117,7 +117,16 @@ img {
 .margin-both {
     margin: 3rem 0;
 }
-/* BUTTON */ 
+.tan-background {
+    background-color: var(--tan);
+    color: var(--navy);
+}
+.navy-background {
+    background-color: var(--navy);
+    color: #fff;
+}
+
+/********** BUTTON **********/ 
 .button {
     position: relative;
     display: inline-block;
@@ -143,7 +152,7 @@ img {
     color: var(--navy) !important;
 }
 
-/* SITE HEADER */
+/********** SITE HEADER **********/
 .site-header {
     background-color: var(--navy);
 }
@@ -151,7 +160,7 @@ img {
     grid-template-columns: 1fr 2fr;
 }
 
-/* STICKY NAV */
+/********** STICKY NAV ***********/
 .sticky-nav {
     position: fixed;
     background-color: rgb(22, 28, 33, 0.9);
@@ -220,7 +229,7 @@ img {
     background-image: url('../images/wolf.png');
 }
 
-/* HERO SECTION */
+/********** HERO SECTION **********/
 .hero-section {
     position:relative;
 }
@@ -288,16 +297,18 @@ img {
 
 main {margin: 5rem auto;}
 
-/* Home - Intro section */
+/********** Home - Intro section **********/
 .intro img {
     max-height: 70vh;
     width: 100%;
 }
 
-/* Home - Box Nav */
+/********** Home - Box Nav ***********/
 .box-nav {
-    grid-template-columns: repeat(3, 1fr);
     position: relative;
+}
+.box-nav .grid{
+    grid-template-columns: repeat(3, 1fr);
 }
 .box {
     position: relative;
@@ -361,6 +372,12 @@ main {margin: 5rem auto;}
 
 }
 
+/********** Home - Discovery **********/
+.discovery h2 {
+    padding-bottom:3rem;
+}
+
+/********** TIMELINE **********/
 /***** Timeline inspiration from - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
 .timeline-title {
     border-bottom: 5px solid var(--tan);
@@ -387,7 +404,7 @@ main {margin: 5rem auto;}
     margin: 2em 0;
 }
 
-/* Timeline Icon */
+/*********** Timeline Icon **********/
 .timeline-icon {
     position: absolute;
     top: 35%;
@@ -418,7 +435,7 @@ main {margin: 5rem auto;}
     max-height: 35px;
 }
 
-/* Timeline Content */
+/********** Timeline Content **********/
 .timeline-block .timeline-content {
     padding:3rem;
 }
@@ -434,7 +451,7 @@ main {margin: 5rem auto;}
     color: var(--navy)
 }
 
-/* Timeline Animation */
+/********** Timeline Animation **********/
 .timeline-icon.is-hidden, .timeline-content.is-hidden {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -461,7 +478,7 @@ main {margin: 5rem auto;}
     }
 }
 
-/* SITE FOOTER */
+/********** FOOTER **********/
 .site-footer a {
     color: #fff;
     text-decoration: none;
@@ -490,6 +507,42 @@ main {margin: 5rem auto;}
     margin-bottom: 2rem;
     display: inline-block;
 }
+.footer-main .footer-nav-menu {
+    place-content: center;
+}
+.footer-main ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-main ul li {
+    margin: 0;
+    padding: 0 0 13px;
+}
+.footer-main ul li a {
+    display: block;
+    text-transform: uppercase;
+}
+
+/********** Footer Socials **********/
+.footer-main .social-facebook:hover img {
+    content: url('../images/icons/facebook-tan.svg');
+}
+.footer-main .social-instagram:hover img {
+    content: url('../images/icons/instagram-tan.svg');
+}
+.footer-main .social-twitter:hover img {
+    content: url('../images/icons/twitter-tan.svg');
+}
+.footer-main .social-youtube:hover img {
+    content: url('../images/icons/youtube-tan.svg');
+}
+.footer-main .social-pinterest:hover img {
+    content: url('../images/icons/pinterest-tan.svg');
+}
+.footer-main .social-tripadvisor:hover img {
+    content: url('../images/icons/tripadvisor-tan.svg');
+}
 .footer-main .social-icons {
     display: flex;
     flex-flow: nowrap;
@@ -512,22 +565,8 @@ main {margin: 5rem auto;}
     width: auto;
     max-width: 40px;
 }
-.footer-main .footer-nav-menu {
-    place-content: center;
-}
-.footer-main ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.footer-main ul li {
-    margin: 0;
-    padding: 0 0 13px;
-}
-.footer-main ul li a {
-    display: block;
-    text-transform: uppercase;
-}
+
+/********** Footer - company info **********/
 .footer-main .company-info .email, .footer-main .company-info .phone-number, .footer-main .company-info .address {
     padding-left: 3rem !important;
     position: relative;
@@ -561,26 +600,8 @@ main {margin: 5rem auto;}
 .footer-main .company-info .address:hover::before {
     background-image: url('../images/icons/location-tan.svg');
 }
-.footer-main .social-facebook:hover img {
-    content: url('../images/icons/facebook-tan.svg');
-}
-.footer-main .social-instagram:hover img {
-    content: url('../images/icons/instagram-tan.svg');
-}
-.footer-main .social-twitter:hover img {
-    content: url('../images/icons/twitter-tan.svg');
-}
-.footer-main .social-youtube:hover img {
-    content: url('../images/icons/youtube-tan.svg');
-}
-.footer-main .social-pinterest:hover img {
-    content: url('../images/icons/pinterest-tan.svg');
-}
-.footer-main .social-tripadvisor:hover img {
-    content: url('../images/icons/tripadvisor-tan.svg');
-}
 
-/* SUB-FOOTER */
+/********** SUB-FOOTER **********/
 .footer-sub {
     background-color:var(--tan);
     color: var(--navy);
@@ -589,8 +610,7 @@ main {margin: 5rem auto;}
     font-weight: 500;
 }
 
-
-/* MEDIA QUERIES */ 
+/********************* MEDIA QUERIES *********************/ 
 /* Max-Widths */
 @media (max-width:550px){
     #site-logo img {padding: 1rem;}
