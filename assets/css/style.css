@@ -358,10 +358,10 @@ figcaption a {
 }
 
 /********** Home - Intro section **********/
-.intro .figure{
+.intro figure{
     width: 100%;
 }
-.intro .figure img {
+.intro figure img {
     max-height: 70vh;
     width: 100%;
 }
