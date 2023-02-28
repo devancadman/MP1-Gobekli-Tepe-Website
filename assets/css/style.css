@@ -926,7 +926,7 @@ button.submit:hover {
 /********************* MEDIA QUERIES *********************/ 
 /* Max-Widths */
 @media (max-width:550px){
-    #site-logo img {padding: 1rem;}
+    #site-logo img, #hero-site-logo img {padding: 1rem;}
     .nav-btn {
         width: 45px;
         height: 45px;
