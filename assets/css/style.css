@@ -277,6 +277,106 @@ img {
 
 main {margin: 5rem auto;}
 
+/***** Timeline inspiration from - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
+.timeline-title {
+    border-bottom: 5px solid var(--tan);
+    margin-bottom: 2rem;
+}
+#timeline {
+    position: relative;
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+}
+#timeline::before {
+    margin-left: -2px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 5px;
+    background: var(--navy);
+}
+.timeline-block {
+    position: relative;
+    margin: 2em 0;
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    position: absolute;
+    top: 35%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    z-index: 99;
+}
+.timeline-block:nth-child(odd) .timeline-icon {
+    left:0;
+    margin-left: -6%;
+}
+.timeline-block:nth-child(even) .timeline-icon {
+    right:0;
+    margin-right: -6%;
+}
+.timeline-block.navy-box .timeline-icon {
+    box-shadow: 0 0 0 4px var(--navy), inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+}
+.timeline-block.tan-box .timeline-icon {
+    box-shadow: 0 0 0 4px var(--tan), inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+}
+.timeline-icon img {
+    max-width: 30px !important;
+    max-height: 35px;
+}
+
+/* Timeline Content */
+.timeline-block .timeline-content {
+    padding:3rem;
+}
+.timeline-content h3 {
+    text-align:center;
+}
+.timeline-block.navy-box .timeline-content {
+    background-color: var(--navy);
+    color: #fff;
+}
+.timeline-block.tan-box .timeline-content {
+    background-color: var(--tan);
+    color: var(--navy)
+}
+
+/* Timeline Animation */
+.timeline-icon.is-hidden, .timeline-content.is-hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.timeline-icon.bounce-in, .timeline-content.bounce-in {
+    animation-name: bounce-in;
+    animation-duration: 1s;
+}
+
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* SITE FOOTER */
 .site-footer a {
     color: #fff;
@@ -300,7 +400,6 @@ main {margin: 5rem auto;}
     grid-gap: 2rem;
 }
 .footer-main .grid .col.footer-button {
-    /*display:block;*/
     margin: 0 auto;
 }
 .footer-main .logo {
