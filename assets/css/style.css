@@ -90,6 +90,7 @@ a {
     color: var(--navy);
     font-weight: bold;
     word-break: break-word;
+    line-height: normal;
 }
 a:hover {
     color:var(--tan);
