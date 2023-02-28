@@ -64,13 +64,15 @@ document.addEventListener("DOMContentLoaded", function() {
 https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
 https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect */
 
+
+/* Source - https://stackoverflow.com/questions/14004117/create-div-and-append-div-dynamically*/
 window.addEventListener('load', function() {
-  /*Add back to top icon**/
+  /*Add back to top button*/
   const toastBackToTop = document.createElement('div');
   toastBackToTop.classList.add('back-to-top');
   document.body.appendChild(toastBackToTop);
 
-  /* Show and hide button based on scroll location */
+  /* Show and hide button based on scroll location - Source: https://stackoverflow.com/questions/28547200/show-hide-menu-based-on-scroll-position & https://codepen.io/matthewcain/pen/ZepbeR*/
   window.addEventListener('scroll', function() {
       if (window.pageYOffset > 20) {
           toastBackToTop.classList.add('show');
@@ -89,7 +91,7 @@ window.addEventListener('load', function() {
       }
   });
 
-  /*Scroll to anchor when clicking a button with an anchor*/
+  /*Scroll to anchor when clicking a button with an anchor - helpfull ref: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link*/
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   for (let i = 0; i < anchorLinks.length; i++) {
       anchorLinks[i].addEventListener('click', function(event) {
