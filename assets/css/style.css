@@ -126,6 +126,9 @@ img {
 .padding-bottom {
     padding-bottom:3rem ;
 }
+hr {
+    border: 5px solid var(--tan);
+}
 
 /********** BUTTON **********/ 
 .button {
