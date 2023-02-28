@@ -67,6 +67,7 @@ body {
 }
 h1, h2, h3 {
     font-family: var(--dalek);
+    line-height: normal;
 }
 h1 {
     font-size: 35px
@@ -80,6 +81,10 @@ h3 {
 p {
     margin: 0;
     padding: 10px 0;
+    line-height: normal;
+}
+figcaption {
+    line-height: normal;
 }
 a {
     text-decoration:none;
@@ -229,6 +234,30 @@ img {
     background-image: url('../images/wolf.png');
 }
 
+/********** Figure with figcaption on Hover **********/
+figure {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+figure:hover figcaption {
+    display: block;
+}
+figcaption {
+    line-height: normal;
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white !important;
+    padding: 10px;
+    display: none;
+}
+figcaption a {
+    color: var(--tan);
+}
+
+
 /********** HERO SECTION **********/
 .hero-section {
     position:relative;
@@ -376,6 +405,7 @@ main {margin: 5rem auto;}
 .discovery h2 {
     padding-bottom:3rem;
 }
+
 
 /********** TIMELINE **********/
 /***** Timeline inspiration from - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
