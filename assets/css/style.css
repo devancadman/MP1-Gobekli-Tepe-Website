@@ -504,3 +504,52 @@ main {margin: 5rem auto;}
     text-align:center;
     font-weight: 500;
 }
+
+/*Timeline Media Queries */
+@media (max-width: 550px){
+    .timeline-block {
+        width: 90% !important;
+    }
+}
+@media (max-width: 768px){
+    #timeline::before {
+        left: 5%;
+    }
+    .timeline-block {
+        margin: 2em auto;
+        width: 93%;
+        margin-right: 0;
+    }
+    .timeline-icon {
+        left: 0 !important;
+        margin-left: -24px !important;
+    }
+    .timeline-block .timeline-content {
+        padding: 2rem;
+    }
+}
+@media (min-width: 768px){
+    .timeline-block:nth-child(even) {
+        float: left;
+        clear: both;
+        padding: 0px 21px 0px 0px;
+    }
+    .timeline-block {
+        background-image: none;
+        width: 50%;
+        margin-bottom: 21px;
+        float: right;
+        clear: both;
+        padding: 0px 0px 0px 21px;
+    }
+    .timeline-icon {
+        width: 70px;
+        height: 70px;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    .timeline-icon img {
+        max-width: 40px !important;
+        max-height: 45px;
+    }
+}
