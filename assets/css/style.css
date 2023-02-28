@@ -565,6 +565,82 @@ ul {
     }
 }
 
+/******* GALLERY******/
+.gallery.grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 2rem;
+}
+.gallery figure {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery figure img.image {
+    width: 100%;
+    height: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery figure:nth-child(odd)::before {
+    position: absolute;
+    content: '';
+    left: -10px;
+    bottom: -10px;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+.gallery figure:nth-child(1)::before {
+    background: #fff url('../images/gallery-icons/1.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(3)::before {
+    background: #fff url('../images/gallery-icons/2.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(5)::before {
+    background: #fff url('../images/gallery-icons/3.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(7)::before {
+    background: #fff url('../images/gallery-icons/4.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(9)::before {
+    background: #fff url('../images/gallery-icons/5.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(11)::before {
+    background: #fff url('../images/gallery-icons/6.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(13)::before {
+    background: #fff url('../images/gallery-icons/7.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(15)::before {
+    background: #fff url('../images/gallery-icons/8.svg') no-repeat center / 60% !important;
+}
+.gallery figure:nth-child(17)::before {
+    background: #fff url('../images/gallery-icons/9.svg') no-repeat center / 60% !important;
+}
+.gallery figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery figure figcaption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    display: none;
+}
+.gallery figure:hover figcaption {    
+    display: block;
+}
+
 /******* View More Button ******/
 .view-more {
     display: flex;
