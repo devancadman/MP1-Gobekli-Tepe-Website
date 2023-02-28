@@ -89,6 +89,7 @@ a {
     text-decoration:none;
     color: var(--navy);
     font-weight: bold;
+    word-break: break-word;
 }
 a:hover {
     color:var(--tan);
