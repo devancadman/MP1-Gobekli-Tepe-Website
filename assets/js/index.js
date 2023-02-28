@@ -32,4 +32,33 @@ window.addEventListener('scroll', function() {
       stickyNav.classList.remove('show');
     }
   });
-  
+
+/***** Timeline Animation for Blocks - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
+document.addEventListener("DOMContentLoaded", function() {
+  var timelineBlocks = document.querySelectorAll(".timeline-block");
+
+  // hide timeline blocks which are outside the viewport
+  timelineBlocks.forEach(function(block) {
+    if (block.getBoundingClientRect().top > window.innerHeight * 0.75) {
+      block.querySelectorAll('.timeline-icon, .timeline-content').forEach(function(elem) {
+        elem.classList.add('is-hidden');
+      });
+    }
+  });
+
+  // on scrolling, show/animate timeline blocks when enter the viewport
+  window.addEventListener("scroll", function() {
+    timelineBlocks.forEach(function(block) {
+      if (block.getBoundingClientRect().top <= window.innerHeight * 0.75 && block.querySelector('.timeline-icon').classList.contains('is-hidden')) {
+        block.querySelectorAll('.timeline-icon, .timeline-content').forEach(function(elem) {
+          elem.classList.remove('is-hidden');
+          elem.classList.add('bounce-in');
+        });
+      }
+    });
+  });
+});
+/* Some Further Guides which helped me were:
+https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
+https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect */
+
