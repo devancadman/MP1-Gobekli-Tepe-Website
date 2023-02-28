@@ -13,6 +13,7 @@ navBtn.addEventListener('click', (e) => {
   }
 });
 
+// Ref https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery
 document.addEventListener('keyup', (e) => {
   if (e.key === 'Escape') {
     navParent.classList.remove('nav--active');
@@ -21,7 +22,8 @@ document.addEventListener('keyup', (e) => {
 });
 
 
-/***** Show the Sticky-nav after a user has scrolled 450px *****/ 
+/***** Show the Sticky-nav after a user has scrolled 450px  - but amended to pure JS *****/ 
+/* Source Code/Idea from - https://codepen.io/Aurelian/pen/GZyaxK?editors=0110 */
 window.addEventListener('scroll', function() {
     var height = window.pageYOffset;
     var stickyNav = document.querySelector('.sticky-nav');
@@ -33,7 +35,7 @@ window.addEventListener('scroll', function() {
     }
   });
 
-/***** Timeline Animation for Blocks - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
+/***** Timeline Animation for Blocks - Source Code:https://codepen.io/codyhouse/pen/OJgRvj  - but amended to pure JS *****/ 
 document.addEventListener("DOMContentLoaded", function() {
   var timelineBlocks = document.querySelectorAll(".timeline-block");
 
@@ -62,3 +64,52 @@ document.addEventListener("DOMContentLoaded", function() {
 https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
 https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect */
 
+window.addEventListener('load', function() {
+  /*Add back to top icon**/
+  const toastBackToTop = document.createElement('div');
+  toastBackToTop.classList.add('back-to-top');
+  document.body.appendChild(toastBackToTop);
+
+  /* Show and hide button based on scroll location */
+  window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 20) {
+          toastBackToTop.classList.add('show');
+      } else {
+          toastBackToTop.classList.remove('show');
+      }
+  });
+
+  /* Functionality to take user back to the top of the site */
+  document.body.addEventListener('click', function(event) {
+      if (event.target.classList.contains('back-to-top')) {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+  });
+
+  /*Scroll to anchor when clicking a button with an anchor*/
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  for (let i = 0; i < anchorLinks.length; i++) {
+      anchorLinks[i].addEventListener('click', function(event) {
+          const link = event.target.getAttribute('href');
+          if (link.indexOf('#') > -1) {
+              const rawLink = link.split('#')[0];
+              const hash = link.split('#')[1];
+              const pageUrl = window.location.href.split('#')[0];
+              if (rawLink == pageUrl || rawLink == '') {
+                  event.preventDefault();
+                  const targetElement = document.getElementById(hash);
+                  if (targetElement) {
+                      const hashPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                      window.scrollTo({
+                          top: hashPosition,
+                          behavior: 'smooth'
+                      });
+                  }
+              }
+          }
+      });
+  }
+});
