@@ -970,7 +970,7 @@ button.submit:hover {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     main {
         margin: 2rem auto;
     }
@@ -1034,7 +1034,7 @@ button.submit:hover {
     }
 }
 /* Min-Width */
-@media (min-width: 768px){
+@media (min-width: 767px){
     main {margin: 5rem auto;}
     .padding-both {
         padding: 5rem 0;
