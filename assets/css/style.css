@@ -590,7 +590,6 @@ figcaption a {
 }
 .gallery figure img.image {
     width: 100%;
-    height: 100%;
     height: 260px;
     object-fit: cover;
     object-position: center;
@@ -983,9 +982,6 @@ button.submit:hover {
     p {
         padding-bottom: 3rem;
     }
-    .sticky-nav {
-        display: none;
-    }
     .grid {
         grid-template-columns: auto !important;
     }
@@ -1015,8 +1011,15 @@ button.submit:hover {
     .gallery.grid {
         grid-template-columns: repeat(1, 1fr) !important;
     }
+    .gallery figure img.image {
+        height: 50vh;
+    }
 }
-
+@media (max-width: 768px){
+    .sticky-nav {
+        display: none;
+    }
+}
 @media(max-width:1024px){
     h2 {
         font-size:35px;
@@ -1035,7 +1038,9 @@ button.submit:hover {
 }
 /* Min-Width */
 @media (min-width: 767px){
-    main {margin: 5rem auto;}
+    main {
+        margin: 5rem auto;
+    }
     .padding-both {
         padding: 5rem 0;
     }
