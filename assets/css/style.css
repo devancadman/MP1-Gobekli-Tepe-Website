@@ -89,7 +89,6 @@ a {
     text-decoration:none;
     color: var(--navy);
     font-weight: bold;
-    word-break: break-word;
     line-height: normal;
 }
 a:hover {
@@ -981,6 +980,9 @@ button.submit:hover {
     }
     p {
         padding-bottom: 3rem;
+    }
+    a {
+        word-break: break-word;
     }
     .grid {
         grid-template-columns: auto !important;
