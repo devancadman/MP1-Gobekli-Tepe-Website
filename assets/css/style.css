@@ -56,7 +56,7 @@
         --dalek: 'Inknut Antiqua', sans-serif;
     }
 }
- 
+
 ::selection {background:#161C21;color:#fff;}
 
 /********** BASIC STYLING **********/
@@ -648,13 +648,13 @@ figcaption a {
     transform: scale(1.1);
 }
 .gallery figure figcaption {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     display: none;
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 5%;
 }
 .gallery figure:hover figcaption {    
     display: block;
