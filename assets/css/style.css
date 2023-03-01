@@ -48,7 +48,15 @@
     --tan: #d6b68e;
     --inknut: 'Inknut Antiqua', Arial;
     --dalek: 'dalekregular', serif;
-}  
+}
+
+/* CSS styles for Mozilla Firefox */
+@-moz-document url-prefix() {
+    :root{
+        --dalek: 'Inknut Antiqua', sans-serif;
+    }
+}
+ 
 ::selection {background:#161C21;color:#fff;}
 
 /********** BASIC STYLING **********/
