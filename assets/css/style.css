@@ -946,6 +946,11 @@ button.submit:hover {
 
 /********************* MEDIA QUERIES *********************/ 
 /* Max-Widths */
+@media (max-width:480px){
+    .nav--active .nav-menu {
+        overflow: scroll;
+    }
+}
 @media (max-width:550px){
     #site-logo img, #hero-site-logo img {padding: 1rem;}
     .nav-btn {
