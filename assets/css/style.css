@@ -90,6 +90,12 @@ p, li {
     padding: 10px 0;
     line-height: normal;
 }
+li {
+  padding: 0; 
+}
+::marker {
+    font-size: 30px;
+}
 figcaption {
     line-height: normal;
 }
