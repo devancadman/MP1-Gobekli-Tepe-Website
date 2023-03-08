@@ -1035,6 +1035,9 @@ button.submit:hover {
     .sticky-nav {
         display: none;
     }
+    .significance .grid figure, .purpose .grid figure {
+        order: 2;
+    }
 }
 @media(max-width:1024px){
     h2 {
