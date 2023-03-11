@@ -55,6 +55,22 @@
     :root{
         --dalek: 'Inknut Antiqua', sans-serif;
     }
+    .sticky-nav-menu li a, .nav-menu li a {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: unset;
+    }
+    .discovery h2, .significance h2, .purpose h2 {
+        padding-bottom: 2rem;
+    }
+    @media (max-width: 1024px) {
+        h2 {
+        font-size: 25px;
+        }
+    }
+  
 }
 
 ::selection {background:#161C21;color:#fff;}
