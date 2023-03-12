@@ -24,16 +24,21 @@ document.addEventListener('keyup', (e) => {
 
 /***** Show the Sticky-nav after a user has scrolled 450px  - but amended to pure JS *****/ 
 /* Source Code/Idea from - https://codepen.io/Aurelian/pen/GZyaxK?editors=0110 */
+/* Only show on scrolling up. Helpful code explanation - https://www.educative.io/answers/how-to-detect-the-direction-of-the-scroll-of-a-page-in-javascript */
+var prevScrollpos = window.pageYOffset;
+var stickyNav = document.querySelector('.sticky-nav');
+
 window.addEventListener('scroll', function() {
-    var height = window.pageYOffset;
-    var stickyNav = document.querySelector('.sticky-nav');
-    
-    if (height >= 450) { /* Specify Scroll Amount before nav shows */
-      stickyNav.classList.add('show');
-    } else {
-      stickyNav.classList.remove('show');
-    }
-  });
+  var currentScrollPos = window.pageYOffset;
+  
+  if (currentScrollPos < prevScrollpos && currentScrollPos >= 450) {
+    stickyNav.classList.add('show');
+  } else {
+    stickyNav.classList.remove('show');
+  }
+  
+  prevScrollpos = currentScrollPos;
+});
 
 /***** Timeline Animation for Blocks - Source Code:https://codepen.io/codyhouse/pen/OJgRvj  - but amended to pure JS *****/ 
 document.addEventListener("DOMContentLoaded", function() {
