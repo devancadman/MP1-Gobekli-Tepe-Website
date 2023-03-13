@@ -984,15 +984,19 @@ button.submit:hover {
     }
     .nav-menu {display:block;}
     .nav-menu ul {margin: 2rem 0 0 1rem;}
-
-    .footer-main ul {padding: 13px 0 0;}
-
+    section.most-impressive .grid {
+        grid-gap:2rem !important;
+    }
+    section.most-impressive p:first-of-type {
+        order: 2;
+    }
     .timeline-block {
         width: 90% !important;
     }
     figcaption {
         font-size: 10px;
     }
+    .footer-main ul {padding: 13px 0 0;}
 }
 
 @media (max-width: 767px){
