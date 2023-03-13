@@ -88,7 +88,7 @@ ___
   | :----------------------------------------------------------:        | :-------------------------------------------------------------------:        |
   | ![Sticky Scroll NavBar](/documentation/wireframes-mockups/desktop/sticky-scroll-nav.png)  | ![Custom Nav Button](/documentation/wireframes-mockups/desktop/custom-nav-button.png)     |
 | **Full Screen Navigation**
- ![Full Screen Navigation](/documentation/wireframes-mockups/desktop/navigation-menu-open.png) |
+ ![Full Screen Navigation](/documentation/wireframes-mockups/desktop/navigation-menu-open.png) | ![Movile Full screen Nav](/documentation/wireframes-mockups/mobile/navigation-menu-open.png)     |
 
 
  * Hero section with an image of a popular Pillar from the site with contrasting colours to keep the text readable.
@@ -239,10 +239,12 @@ Please see [Credits](#credits) section for more info.
 
 ### Symbols
 Symbols were created using Illustrator and are based on the symbols found within Göbekli Tepe on its various pillars and other areas where symbols have been depicted in reliefs.
+
 ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
  |           **Icon 1**          |           **Icon 2**          |           **Icon 3**          |           **Icon 4**          |
  | :---------------------------: | :---------------------------: | :---------------------------: | :---------------------------: |
  | ![Icon 1](assets/images/timeline-icons/Info_Box_1-symbol.svg)  | ![Icon 2](assets/images/timeline-icons/Info_Box_2-symbol.svg) | ![Icon 3](assets/images/timeline-icons/Info_Box_5-symbol.svg) | ![Icon 4](assets/images/timeline-icons/Info_Box_6-symbol.svg) |
+
 I used these on both the Gallery & Timeline pages.
 
 #### Logo
