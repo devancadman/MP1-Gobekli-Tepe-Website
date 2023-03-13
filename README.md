@@ -275,23 +275,22 @@ The finished product came very close to the initial concepts.
 
 | Desktop  Home                                                         | Desktop Timeline                                                         |
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
-| ![Home page wireframe](/documentation/wireframes-mockups/desktop/home.png) | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/timeline.png)  |
+| ![Home page wireframe](/documentation/wireframes-mockups/desktop/home.png) | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/TIMELINE.png)  |
 
 | Mobile Home                                                          | Mobile Timeline                                                           |
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
-| ![Home page wireframe](/documentation/wireframes-mockups/mobile/home.png)     | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/timeline.png)      |
+| ![Home page wireframe](/documentation/wireframes-mockups/mobile/HOME.png)     | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/timelineTIMELINE
 
-
- * [Desktop home page wireframe](/documentation/wireframes-mockups/desktop/home.png)
+ * [Desktop home page wireframe](/documentation/wireframes-mockups/desktop/HOME.png)
  * [Desktop about page wireframe](/documentation/wireframes-mockups/desktop/about.png)
  * [Desktop timeline page wireframe](/documentation/wireframes-mockups/desktop/timeline.png)
  * [Desktop gallery page wireframe](/documentation/wireframes-mockups/desktop/gallery.png)
  * [Desktop contact page wireframe](/documentation/wireframes-mockups/desktop/contact.png)
- * [Mobile home page wireframe](/documentation/wireframes-mockups/mobile/home.png)
- * [Mobile about page wireframe](/documentation/wireframes-mockups/mobile/about.png)
- * [Mobile timeline page wireframe](/documentation/wireframes-mockups/mobile/timeline.png)
- * [Mobile gallery page wireframe](/documentation/wireframes-mockups/mobile/gallery.png)
- * [Mobile contact page wireframe](/documentation/wireframes-mockups/mobile/contact.png)
+ * [Mobile home page wireframe](/documentation/wireframes-mockups/mobile/HOME.png)
+ * [Mobile about page wireframe](/documentation/wireframes-mockups/mobile/ABOUT.png)
+ * [Mobile timeline page wireframe](/documentation/wireframes-mockups/mobile/TIMELINE.png)
+ * [Mobile gallery page wireframe](/documentation/wireframes-mockups/mobile/GALLERY.png)
+ * [Mobile contact page wireframe](/documentation/wireframes-mockups/mobile/CONTACT.png)
  ___
 
 ## Technologies Used
