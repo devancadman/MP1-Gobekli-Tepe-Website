@@ -281,7 +281,7 @@ The finished product came very close to the initial concepts.
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
 | ![Home page wireframe](/documentation/wireframes-mockups/mobile/HOME.png)     | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/TIMELINE.png)
 
- * [Desktop home page wireframe](/documentation/wireframes-mockups/desktop/HOME.png)
+ * [Desktop home page wireframe](/documentation/wireframes-mockups/desktop/home.png)
  * [Desktop about page wireframe](/documentation/wireframes-mockups/desktop/about.png)
  * [Desktop timeline page wireframe](/documentation/wireframes-mockups/desktop/timeline.png)
  * [Desktop gallery page wireframe](/documentation/wireframes-mockups/desktop/gallery.png)
