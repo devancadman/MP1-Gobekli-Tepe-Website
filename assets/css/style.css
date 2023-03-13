@@ -765,7 +765,6 @@ figcaption a {
     grid-template-columns: 1fr 2fr;
     align-items: start;
 }
-
 .form label {
     display: none;
 }
