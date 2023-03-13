@@ -795,6 +795,9 @@ figcaption a {
     border: 0;
     font-size: 16px;
 }
+form input::placeholder, form textarea::placeholder {
+    color: var(--navy);
+}
 button.submit {
     width: 100%;
     background-color: var(--navy);
