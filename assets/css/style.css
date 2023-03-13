@@ -394,8 +394,7 @@ figcaption a {
 
 /********** 404 - Error Page **********/
 .error-404 .hero {
-    background-image: url('assets/images/gobekli-tepe-outside.jpe') !important;
-    height: 100%; 
+    background-image: url('../images/gobekli-tepe-outside.jpeg') !important;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -403,10 +402,31 @@ figcaption a {
     background-size: cover;
     text-align: center;
 }
-.error-404 .hero .hero-site-logo {
+.error-404 .hero .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 2rem 1rem;
+    z-index: 10;
+    display: inline-grid;
+    place-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+.error-404 .hero-site-logo {
     position: absolute;
     left: 5%;
     top: 5%;
+}
+.error-404 .nav-btn {
+    z-index:99;
+}
+.error-404 .main-content {
+    color:#fff;
 }
 .error-404 .hero .button {
     font-family: var(--inknut);
