@@ -394,7 +394,7 @@ figcaption a {
 
 /********** 404 - Error Page **********/
 .error-404 .hero {
-    background-image: url('../image/gobekli-tepe-outside.jpeg') !important;
+    background-image: url('assets/images/gobekli-tepe-outside.jpe') !important;
     height: 100%; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
