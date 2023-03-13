@@ -528,6 +528,9 @@ figcaption a {
     color: var(--tan);
 }
 
+.faq details[open] summary {
+    font-weight: bold;
+}
 /********** TIMELINE **********/
 /***** Timeline inspiration from - Source Code:https://codepen.io/codyhouse/pen/OJgRvj *****/ 
 .timeline-title {
