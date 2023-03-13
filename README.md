@@ -275,11 +275,11 @@ The finished product came very close to the initial concepts.
 
 | Desktop  Home                                                         | Desktop Timeline                                                         |
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
-| ![Home page wireframe](/documentation/wireframes-mockups/desktop/home.png) | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/TIMELINE.png)  |
+| ![Home page wireframe](/documentation/wireframes-mockups/desktop/home.png) | ![Timeline  page wireframe](/documentation/wireframes-mockups/desktop/timeline.png)  |
 
 | Mobile Home                                                          | Mobile Timeline                                                           |
 | ---------------------------------------------------------------------  | ------------------------------------------------------------------------- |
-| ![Home page wireframe](/documentation/wireframes-mockups/mobile/HOME.png)     | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/timelineTIMELINE
+| ![Home page wireframe](/documentation/wireframes-mockups/mobile/HOME.png)     | ![Timeline  page wireframe](/documentation/wireframes-mockups/mobile/TIMELINE.png)
 
  * [Desktop home page wireframe](/documentation/wireframes-mockups/desktop/HOME.png)
  * [Desktop about page wireframe](/documentation/wireframes-mockups/desktop/about.png)
