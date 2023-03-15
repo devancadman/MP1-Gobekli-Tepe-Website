@@ -355,7 +355,7 @@ The Live link is [Göbekli Tepe's](https://devancadman.github.io/MP1-Gobekli-Tep
 4. Type `git clone` and paste the copied *HTTPs* link, press the *Enter* key to begin the clone process
 ___
 
-## Credits {#credits}
+## Credits
 ### Code
  All my code was written based on what I have learned from [CodeInstitute Full Stack Developer Course](https://codeinstitute.net/ie/full-stack-software-development-diploma/) and [W3schools](https://www.w3schools.com/) and other online resources.
  * CSS Reset was added to the site from [Josh's Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/).
