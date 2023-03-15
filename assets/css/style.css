@@ -417,15 +417,14 @@ figcaption a {
     -webkit-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;
 }
-.error-404 .hero-site-logo {
-    position: absolute;
-    left: 5%;
-    top: 5%;
-}
-.error-404 .nav-btn {
+.error-404 #hero-site-logo {
     z-index:99;
 }
+.error-404 .nav-btn {
+    z-index:999;
+}
 .error-404 .main-content {
+    z-index:99;
     color:#fff;
 }
 .error-404 .hero .button {
@@ -1162,6 +1161,11 @@ button.submit:hover {
     .timeline-icon img {
         max-width: 40px !important;
         max-height: 45px;
+    }
+    .error-404 #hero-site-logo {
+        position: absolute;
+        left: 5%;
+        top: 5%;
     }
 }
 
