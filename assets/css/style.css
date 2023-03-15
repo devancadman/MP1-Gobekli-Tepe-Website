@@ -413,7 +413,7 @@ figcaption a {
     display: inline-grid;
     place-content: center;
     color: #fff;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     -webkit-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;
 }
@@ -428,8 +428,20 @@ figcaption a {
     color:#fff;
 }
 .error-404 .hero .button {
-    font-family: var(--inknut);
     text-transform: initial;
+    font-family: var(--inknut);
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    background: linear-gradient(#d6b68e 0 0) calc(100% - var(--p,0%)) / var(--p,0%) no-repeat;
+    transition: background-size 0.5s, background-position 0s;
+}
+.error-404 .hero .button:hover {
+    --p: 100%;
+    color: var(--navy) !important;
+    border: 2px solid var(--tan);
+    background-size: 0% 100%;
+    transition: background-size 0.5s;
 }
 
 /********** Home - Intro section **********/
@@ -1166,6 +1178,9 @@ button.submit:hover {
         position: absolute;
         left: 5%;
         top: 5%;
+    }
+    .error-404 #hero-site-logo img { 
+        max-height:60px;
     }
 }
 
