@@ -1,8 +1,6 @@
 # Göbekli Tepe
 ##### Code Institute / User-Centric Front-End Development
 
-Grade: PASS
-
 You can check the website here [Göbekli Tepe](https://devancadman.github.io/MP1-Gobekli-Tepe-Website/index.html)
 
 ![ScreenShot](./documentation/documentation-images/Am-I-Responsive-Gobekli-Tepe-Website.png)
